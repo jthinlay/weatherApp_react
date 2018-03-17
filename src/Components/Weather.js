@@ -21,6 +21,11 @@ const Weather = props => (
       }
 
       {
+        props.condition && <p className="weather__key">Condition:
+        <span className="weather__value"> {props.condition}</span></p>
+      }
+
+      {
         props.description && <p className="weather__key">Description:
         <span className="weather__value"> {props.description}</span>
         </p>
